@@ -1,7 +1,7 @@
 #Jim Vargas
 import math
 
-def Nth_Fib(n):
+def Nth_Fib(n,p=False):
     '''This function returns the nth number in the Fibonacci sequence (z), 
         starting F(n=0) = 1'''
     n = abs(int(n))
@@ -11,7 +11,8 @@ def Nth_Fib(n):
             (1/math.sqrt(5)) * (
                 ( (1-math.sqrt(5) ) / 2) ** (n+1))
     )
-
+    if p:
+        print("Nth term:", round(z))
     return round(z)
 
 

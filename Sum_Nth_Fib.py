@@ -33,5 +33,5 @@ def Sum_Nth_Fib(n, steps=False, p=False):
 #print(Sum_Nth_Fib(2,True,True))
 #print(Sum_Nth_Fib(2))
 #print(Sum_Nth_Fib(2,False,True))
-Sum_Nth_Fib(2,False,True)
+#Sum_Nth_Fib(2,False,True)
             
