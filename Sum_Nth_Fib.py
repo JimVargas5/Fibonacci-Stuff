@@ -5,7 +5,7 @@ from Nth_Fib import Nth_Fib
 
 def Sum_Nth_Fib(n, steps=False, p=False):
     '''This function returns and can print the sum of the Fibonacci numbers 
-        up to the nth numberin the Fibonacci sequence (z), starting F(n=0) = 1.
+        up to the nth number in the Fibonacci sequence (z), starting F(n=0) = 1.
         The input "steps" detemrines whether or not intermediate sums will
         be printed; the input "p" will determine if anything is printed.'''
     #NOTE: if steps==False and p==True, you shouldn't nest this function

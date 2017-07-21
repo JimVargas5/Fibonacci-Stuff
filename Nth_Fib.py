@@ -2,8 +2,8 @@
 import math
 
 def Nth_Fib(n,p=False):
-    '''This function returns the nth number in the Fibonacci sequence (z), 
-        starting F(n=0) = 1'''
+    '''This function returns and can print the nth number in the 
+        Fibonacci sequence (z), starting F(n=0) = 1'''
     n = abs(int(n))
     z = (
             (1/math.sqrt(5)) * (
