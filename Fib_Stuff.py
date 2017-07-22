@@ -116,6 +116,7 @@ def main():
     else:
         print("You have to enter one of the number options!")
         check()
+    check()
 
 
 if __name__ == '__main__':
