@@ -53,6 +53,7 @@ def main():
             print("You didn't enter a number you shmuck!")
             check()
         Nth_Fib(n,True)
+        check()
     elif which == "2":
         print("Do you want to see the intermediate sums as it goes along?")
         steps = input("[y/n] >>> ")
@@ -77,6 +78,7 @@ def main():
         else:
             print("Enter 'y' or 'n' dammit!")
             check()
+        check()
     elif which == "3":
         print("Which term in the sequence?")
         n = input(">>> ")
@@ -86,6 +88,7 @@ def main():
             print("You didn't enter a number you shmuck!")
             check()
         Nth_Lucas(n,True)
+        check()
     elif which == "4":
         print("Do you want to see the intermediate sums as it goes along?")
         steps = input("[y/n] >>> ")
@@ -110,13 +113,13 @@ def main():
         else:
             print("Enter 'y' or 'n' dammit!")
             check()
+        check()
     elif which == "poop":
         print("Bruh, you got the secret key! As a reward, this program will quit.")
         exit()
     else:
         print("You have to enter one of the number options!")
         check()
-    check()
 
 
 if __name__ == '__main__':
