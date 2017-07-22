@@ -14,6 +14,6 @@ def Nth_Lucas(n,p=False):
     return round(z)
 
 
-Nth_Lucas(0,True)
-Nth_Lucas(1,True)
-Nth_Lucas(36,True)
+#Nth_Lucas(0,True)
+#Nth_Lucas(1,True)
+#Nth_Lucas(36,True)
