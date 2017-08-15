@@ -1,11 +1,15 @@
 #Jim Vargas
 #TODO: general sequence thing
+"""Efficiency isn't really my goal here; that being said, I don't use loops
+    (which would be too easy)"""
 
 import math
 from Nth_Fib import Nth_Fib
 from Sum_Nth_Fib import Sum_Nth_Fib
 from Nth_Lucas import Nth_Lucas
 from Sum_Nth_Lucas import Sum_Nth_Lucas
+from Nth_TriSquare import Nth_TriSquare
+#TODO: implement this last import below
 
 def check():
     print("Do you want to continue?")
@@ -35,7 +39,8 @@ def main():
         "1: return the nth number in the Fibonacci Sequence", '\n',
         "2: return the sum of the Fibonacci numbers up to the nth one", '\n',
         "3: return the nth number in the Lucas Sequence", '\n',
-        "4: return the sum of the Lucas numbers up to the nth one", '\n'
+        "4: return the sum of the Lucas numbers up to the nth one", '\n',
+        "5: return the nth triangle number that is a square", '\n',
         "That's all for now..."
      )
     which = input(">>> ")
@@ -113,6 +118,18 @@ def main():
         else:
             print("Enter 'y' or 'n' dammit!")
             check()
+        check()
+    elif which == "5":
+        print("Which term?")
+        n = input(">>> ")
+        try:
+            int(n)
+        except ValueError:
+            print("You didn't enter a number you shmuck!")
+            check()
+        if int(n) > 11:
+            print("NOTE: For n > 11, python may lose numerical accuracy.")
+        Nth_TriSquare(n,True)
         check()
     elif which == "poop":
         print("Bruh, you got the secret key! As a reward, this program will quit.")
