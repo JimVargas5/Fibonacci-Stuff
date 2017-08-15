@@ -58,6 +58,7 @@ def main():
             print("You didn't enter a number you shmuck!")
             check()
         Nth_Fib(n,True)
+        print("\n")
         check()
     elif which == "2":
         print("Do you want to see the intermediate sums as it goes along?")
@@ -83,6 +84,7 @@ def main():
         else:
             print("Enter 'y' or 'n' dammit!")
             check()
+        print("\n")
         check()
     elif which == "3":
         print("Which term in the sequence?")
@@ -93,6 +95,7 @@ def main():
             print("You didn't enter a number you shmuck!")
             check()
         Nth_Lucas(n,True)
+        print("\n")
         check()
     elif which == "4":
         print("Do you want to see the intermediate sums as it goes along?")
@@ -118,6 +121,7 @@ def main():
         else:
             print("Enter 'y' or 'n' dammit!")
             check()
+        print("\n")
         check()
     elif which == "5":
         print("Which term?")
@@ -127,12 +131,20 @@ def main():
         except ValueError:
             print("You didn't enter a number you shmuck!")
             check()
-        if int(n) > 11:
-            print("NOTE: For n > 11, python may lose numerical accuracy.")
-        Nth_TriSquare(n,True)
+        print("Do you want to see the square of the "+n+"th term?")
+        square = input("[y/n] >>> ")
+        if square == "y" or square == "Y":
+            Nth_TriSquare(n,True,True)
+        elif square == "n" or square == "N":
+            Nth_TriSquare(n,False,True)
+        else:
+            print("Enter 'y' or 'n' dammit!")
+            check()
+        print("\n")
         check()
     elif which == "poop":
-        print("Bruh, you got the secret key! As a reward, this program will quit.")
+        print("Bruh, you got the secret key! As a reward,", 
+            "this program will quit.")
         exit()
     else:
         print("You have to enter one of the number options!")

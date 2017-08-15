@@ -8,10 +8,10 @@
 
 import math
 
-def Nth_TriSquare(n, p=False):
+def Nth_TriSquare(n, square=False, p=False,):
     '''This function returns and can print the nth triangle 
         number that is also a square (z), starting at 1,36,... 
-        It also uses the most explicit formula, more efficient functions
+        It also uses the most explicit formula. More efficient functions
         can be written'''
     n = abs(int(n))
     z = (
@@ -20,6 +20,13 @@ def Nth_TriSquare(n, p=False):
                 (17 - 12*math.sqrt(2))**n - 2
             ) / 32
     )
-    if p:
-        print("Nth square triangle number: ", round(z))
-    return round(z)
+    if square:
+        if p:
+            print("Nth square triangle number: ", round(z))
+            print("Square of", str(round(z))+":", str(round(math.sqrt(z))))
+        return round(z), round(math.sqrt(z))
+    else:
+        if p:
+            print("Nth square triangle number: ", round(z))
+        return round(z)
+
