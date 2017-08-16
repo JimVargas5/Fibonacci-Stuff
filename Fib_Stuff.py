@@ -131,6 +131,8 @@ def main():
         except ValueError:
             print("You didn't enter a number you shmuck!")
             check()
+        if int(n) > 11:
+            print("NOTE: for n > 11, python may lose numerical accuracy.")
         print("Do you want to see the square of the "+n+"th term?")
         square = input("[y/n] >>> ")
         if square == "y" or square == "Y":
