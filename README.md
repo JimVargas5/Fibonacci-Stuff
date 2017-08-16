@@ -1,5 +1,5 @@
 # Fibonacci-Stuff
-These algorithms do not use loops for nth-terms for things that are typically expressed recursively.
+These algorithms do not use loops for nth-terms for things that are typically expressed recursively. For the sums, accumulator loops are used. The algorithms are using the most complete and explicit formulas, and thus are not witten for efficiency; rather, just as a 'proof of concept' for myself that such things can be written in code.
 	
 For all of these algorithms, there is the option to print and return the number of interest. These algorithms are inteded for usage on the command line, so everything is set up to print out of main (but can be adjusted easily).
 	
